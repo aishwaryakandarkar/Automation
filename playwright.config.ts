@@ -11,6 +11,5 @@ export default defineConfig({
     ignoreHTTPSErrors: true,
     screenshot: 'only-on-failure', // take screenshots on failure
     video: 'retain-on-failure',    // record video if test fails
-    launchOptions: {slowMo: 1000},
   },
 });

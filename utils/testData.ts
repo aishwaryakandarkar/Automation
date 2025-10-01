@@ -8,3 +8,9 @@ export const loginData = {
     password: 'wrong_pass'
   }
 };
+
+export const checkoutData = {
+  firstName: 'Aishwarya',
+  lastName: 'Kandarkar',
+  postalCode: '411001'
+};
