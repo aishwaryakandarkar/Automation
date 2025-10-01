@@ -18,6 +18,7 @@ test.describe('Login Tests @Login', () => {
         await page.pause();
         await loginPage.login(loginData.validUser.username, loginData.validUser.password);
         await expect(page).toHaveURL(/inventory/);
+        console.log ('Login successful');
     });
 
     test('Invalid login', async ({ page }) => {
@@ -25,6 +26,7 @@ test.describe('Login Tests @Login', () => {
         await loginPage.goto();
         await loginPage.login(loginData.invalidUser.username, loginData.invalidUser.password);
         await expect(loginPage.errorMessage).toBeVisible();
+        console.log ('Login failed as expected');
     });
 
     test.afterEach(async () => {
